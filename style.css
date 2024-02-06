@@ -1,0 +1,280 @@
+/* Importing Roboto font from Google Fonts with various weights and styles */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Global reset and styling for all elements */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Body styling */
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header styles */
+.banner-wrap{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
+                      url(./assets/ZA-en-20240129-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    border-bottom: 8px solid #222222;
+    z-index: 1;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width:100%;
+    background: black;
+    position:absolute;
+    opacity: 50%;
+    z-index: -1;
+    
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    padding: 24px 127px;
+}
+
+.nav-bar > img{
+    height: 56px;
+
+}
+
+.nav-bar > a {
+    padding: 6px 14px;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 600;
+   
+}
+
+/* Email form title styles */
+.email-form-title{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+/* Paragraph styles */
+p{
+    margin: 16px 0px 0px ;
+}
+
+/* Main content styles */
+.banner-container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100% - 45px);
+
+}
+
+/* Title and subtitle styles */
+.card-title{
+    font-size: 43px;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    font-weight: 800;
+}
+.card-subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+/* Get started form styles */
+.get-started-form{
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Input field styles */
+.get-started-form input{
+    height: 100%;
+    width:340px;
+    padding-left: 10px; 
+    margin-right: 7px;
+    border-radius: 4px;
+    background-color: rgba(24, 20, 20, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.364); 
+}
+
+/* Placeholder text styles */
+.get-started-form input::placeholder{
+    color: rgb(196, 190, 190); 
+    font-size: 15px;
+}
+
+/* Button styles */
+.get-started-form button{
+    background-color: rgb(219, 2, 2);
+    color: white;
+    height: 100%;
+    width: 190px;
+    font-size: 21.5px;
+    font-weight: 00;
+    border: none;
+    min-height: 56px;
+    padding: 0 26px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+/* Buttom hover effect */
+.get-started-form button:hover {
+    background-color: rgb(190, 2, 2); 
+}
+
+/* Info container styles */
+.info-container{
+    background: black;
+    color: white;
+    display: flex;
+    padding: 70px 150px;
+    display: flex;
+    border-bottom: 8px solid #222222;
+}
+
+.info{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Info paragraph styles */
+.info-container p{
+    font-size: 22px;
+}
+
+/* TV container styles */
+.tv-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TV image styles */
+.tv-container img{
+    z-index: 1;
+    width: 500px
+}
+
+/* TV video styles */
+.tv-container video{
+    position: absolute;
+    width: 400px;
+}
+
+/* Footer styles */
+.footer{
+    background-color: black;
+}
+
+/* Footer items container styles */
+.footer-items{
+    margin: 0 47.5px;
+    padding:70px 45px
+}
+
+/* Footer top section styles */
+.footer-top{
+    margin-bottom: 30px;
+}
+
+/* Questions title styles */
+.questions-title:hover{
+    cursor: pointer;
+}
+
+/* Footer links styles */
+.footer ul li, .questions-title{
+    color:#c1bebe ;
+}
+
+/* Footer links list styles */
+.footer-links li{
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* Footer links hover effect */
+.footer ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Footer links container styles */
+.footer-links{
+    list-style-type: none;
+    columns:4;
+    padding: 0;   
+}
+
+/* Language selector styles */
+.language{
+    height: 30px;
+    width: 120px;
+    color:#999999;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    border:0.5px solid #858383;
+    padding: 0 10px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+/* Language dropdown styles */
+.language select{
+    margin-left: 2px;
+    border: none;
+    appearance: none;
+    background: black;
+    color: white;
+    background: url(./assets/toppng.com-white-drop-down-arrow-423x265.png) no-repeat 100%;
+    background-size: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* Material Icons styles */
+.language i.material-icons{
+    font-size: 15px ;
+    color: white;
+    
+}
+
+/* Location text styles */
+.location{
+    color: #c1bebe;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
